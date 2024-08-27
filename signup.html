@@ -3,94 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            width: 300px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        p {
-            text-align: center;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        .input_box {
-            margin-bottom: 15px;
-        }
-
-        .input_box input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .button {
-            width: 100%;
-            padding: 10px;
-            background: #007bff;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .login_signup {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .login_signup a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .login_signup a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Sign Up</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Signup</h1>
-        <p>Create an account to join our photography community.</p>
-        <form action="#">
-            <div class="input_box">
-                <input type="text" placeholder="Enter your name" required />
-            </div>
-            <div class="input_box">
-                <input type="email" placeholder="Enter your email" required />
-            </div>
-            <div class="input_box">
-                <input type="password" placeholder="Create a password" required />
-            </div>
-            <div class="input_box">
-                <input type="password" placeholder="Confirm your password" required />
-            </div>
-            <button class="button">Signup</button>
-            <div class="login_signup">Already have an account? <a href="login.html">Login</a></div>
-        </form>
+    <div class="right-button">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='about.html'">About</button>
+        <button onclick="location.href='styling.html'">Styling</button>
+        <button onclick="location.href='login.html'">Log In</button>
     </div>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <main>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Photography</p>
+    </footer>
 </body>
 </html>
