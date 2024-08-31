@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="right-button">
-        <button onclick="location.href='index.html'">Sign Up</button>
-        <button onclick="location.href='about.html'">About</button>
-        <button onclick="location.href='types-of-photography.html'">Types of Photography</button>
-        <button onclick="location.href='types-of-cameras.html'">Types of Cameras</button>
-    </div>
     <header>
-        <h1>Log In</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="types-of-photography.html">Types of Photography</a></li>
+                <li><a href="types-of-cameras.html">Types of Cameras</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <h1>Login</h1>
         <form>
-            <!-- Log In form fields -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
         </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
     </main>
     <footer>
-        <p>&copy; Photography</p>
+        <p>&copy; 2023 Photography</p>
     </footer>
 </body>
 </html>
+
+
